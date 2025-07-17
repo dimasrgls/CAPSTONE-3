@@ -1,52 +1,57 @@
-# CAPSTONE-3
-Project Capstone 3 sebagai evaluasi hasil Pembelajaran Modul 3 Purwadhika JKT (Data Scientist and Machine Learning))
+# 🏡 California Housing Price Prediction
 
-🏡 Prediksi Harga Rumah Menggunakan Machine Learning
-Proyek ini bertujuan untuk membangun model Machine Learning yang dapat memprediksi harga rumah berdasarkan berbagai fitur seperti lokasi geografis, jumlah kamar, usia bangunan, dan faktor lingkungan lainnya. Dataset yang digunakan adalah California Housing Dataset 1990, yang sering digunakan untuk tugas regresi.
+This project aims to build a Machine Learning model to predict the median house prices in California based on various features such as geographic location, number of rooms, building age, and environmental factors.
 
-🎯 Tujuan Proyek
-Memprediksi harga median rumah di wilayah California.
+The model was trained using the publicly available California Housing Dataset (1990) and evaluated using regression metrics including MAE, MAPE, and R² Score.  
+The project also includes visual data analysis and model interpretation using SHAP values to identify the most influential features affecting house prices.
 
-Menerapkan berbagai algoritma Machine Learning seperti Linear Regression, Decision Tree, Random Forest, hingga XGBoost.
+## 🚀 Project Overview
 
-Melakukan evaluasi model menggunakan metrik seperti MAE,MAPE, dan R² Score.
+This project aims to build a machine learning model to **predict median house prices** in California based on features such as geographic location, population density, building age, and household income.
 
-Menampilkan analisis data dan visualisasi yang mendalam untuk memahami faktor-faktor yang memengaruhi harga rumah.
+The goal is not just to predict accurately, but also to understand which features influence housing prices the most — providing insight for potential real estate investment or pricing strategies.
 
-🧰 Tools dan Teknologi
-Python (pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost,shap)
+---
 
-Jupyter Notebook
+## 🎯 Objectives
 
-Git & GitHub
+- Predict housing prices using regression models.
+- Evaluate performance using metrics: **MAE**, **MAPE**, and **R² Score**.
+- Compare multiple ML algorithms and tune their performance.
+- Interpret model results and feature importance using **SHAP**.
 
-VS Code 
+---
 
-📊 Alur Proyek
-Eksplorasi Data
-Analisis data secara statistik dan visual untuk memahami distribusi dan korelasi antar fitur.
+## 🔍 Key Insights
 
-Pra-pemrosesan Data
+✅ **Best Model**: XGBoost Regressor  
+✅ **Best R² Score**: 0.83  
+✅ **Top Features**:
+- Median Income 💰
+- Geographic Location (Latitude & Longitude) 📍
+- Rooms per Household 🏘️
 
-Penanganan nilai hilang 
+Interpretability is enhanced using **SHAP values**, allowing a deeper understanding of how each feature impacts the prediction.
 
-Encoding fitur kategorikal
+---
 
-Feature scaling
+## 🛠️ Tech Stack
 
-Pembuatan Model
+- **Python** (pandas, numpy, matplotlib, seaborn)
+- **scikit-learn**, **XGBoost**, **SHAP**
+- **Jupyter Notebook**
+- **VS Code**, **Git**, **GitHub**
 
-Linear Regression
+---
 
-Decision Tree Regressor
+## 📊 Project Workflow
 
-Random Forest Regressor
-
-XGBoost Regressor
-
-Evaluasi Model
-Menggunakan validasi silang dan metrik evaluasi untuk menilai performa model.
-hyperparameter tunning
-
-Kesimpulan & Insight
-Menyimpulkan model terbaik dan fitur paling berpengaruh terhadap harga rumah.
+```text
+📁 california-housing-capstone
+│
+├── data/                # Raw and cleaned dataset
+├── notebooks/           # Main analysis and modeling notebooks
+├── models/              # Saved models (if any)
+├── images/              # Graphs and visualizations
+├── requirements.txt     # Environment dependencies
+└── README.md            # Project documentation
